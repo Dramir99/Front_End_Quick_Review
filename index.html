@@ -3,73 +3,77 @@
 <head>
     
     <title>Daniel Ramirez's Resume page</title>
-    
+    <link rel="stylesheet" href="site.css"/>
 </head>
 <body>
     
-    <header>
-        <h1>Daniel Ramirez</h1>
-        <img src="/img/headshot_smaller.jpg" alt="Daniel Ramirez"/>
-        <ol>
-            <li> <a href="index.html">Home</a> </li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="privacy.html">privacy</a></li>
-        </ol>
-    </header>
-    
-    <main style="background-color: slategrey;">
-        <p> <strong> purpose</strong> This is a resume (or cv) to help me get a job in web development</p>
-        <h2>Experience</h2>
-        <div>
-            <p>ACM - Cinema Company - 20220-2022</p>
-            <p>worked as a Fry cook</p>
-        </div>
-        <div>
-            <p>McDonalds - Fast Food Company - 2015-2019</p>
-            <p>Worked regiter and did inventory</p>
-        </div>
-    </main>
-    <aside>
-        <h2>Contact Me</h2>
-        <form>
-            <div>
-                <label for="fullName">Full Name</label>
-            </div>
-            <div>
-                <input id="fullName" type="text" />
-            </div>
-            <div>
-                <label for="email">Email</label>
-            </div>
-            <div>
-                <input id="email" type="email" />
-            </div>
-            <div>
-                <label for="subject">Subject</label>
-            </div>
-            <div>
-                <select id="subject">
-                    <option>Job Offer</option>
-                    <option>Personal Message</option>
-                    <option>Complaint</option>
-                </select>
-            </div>
-            <div>
-                <label for="msg">Message</label>
-            </div>
-            <div>
-                <textarea id="msg" rows="4"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Send Mail"/>
-            </div>
+    <div class="container">
+        <header>
+            <img id="headshot" src="/img/headshot_smaller.jpg" alt="Daniel Ramirez"/>
+            <h1 id="siteName">Daniel Ramirez</h1>
             
-        </form>
-    </aside>
+            <ul id="menu">
+                <li class = "active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </header>
+        
+        <main>
+            <p> <strong> Purpose</strong> This is a resume (or cv) to help me get a job in web development</p>
+            
+            <h2>Experience</h2>
+            <div class="experience">
+                <p class="title" >ACM - Cinema Company - 20220-2022</p>
+                <p>worked as a Fry cook</p>
+            </div>
+            <div class="experience">
+                <p class="title" >McDonalds - Fast Food Company - 2015-2019</p>
+                <p>Worked regiter and did inventory</p>
+            </div>
+        </main>
+        <aside>
+            <h2>Contact Me</h2>
+            <form>
+                <div>
+                    <label for="fullName">Full Name</label>
+                </div>
+                <div>
+                    <input id="fullName" type="text" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input id="email" type="email" />
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                </div>
+                <div>
+                    <select id="subject">
+                        <option>Job Offer</option>
+                        <option>Personal Message</option>
+                        <option>Complaint</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Message</label>
+                </div>
+                <div>
+                    <textarea id="msg" rows="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send Mail"/>
+                </div>
+                
+            </form>
+        </aside>
 
-    <footer>
-        &copy; 2022 Copyright - Daniel Ramirez
-    </footer>
+        <footer>
+            &copy; 2022 Copyright - Daniel Ramirez
+        </footer>
+    </div>
 </body>
 
 </html>
